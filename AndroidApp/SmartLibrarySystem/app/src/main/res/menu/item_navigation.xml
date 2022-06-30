@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_first"
+        android:icon="@drawable/ic_baseline_work_24"
+        android:title="@string/library_menu_rent_title"/>
+
+    <item
+        android:id="@+id/menu_second"
+        android:icon="@drawable/ic_baseline_stars_24"
+        android:title="@string/library_menu_recommend_title"/>
+</menu>

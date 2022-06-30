@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SmartLibraryAdmin</string>
+    
+    
+    <string name="sensor_data">센서 데이터</string>
+    <string name="search_sensor_data">센서 데이터 검색</string>
+
+</resources>

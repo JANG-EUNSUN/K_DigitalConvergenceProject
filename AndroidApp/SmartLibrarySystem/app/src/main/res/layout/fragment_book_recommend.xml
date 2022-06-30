@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        android:background="@color/white"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="추천 도서 불러오는 중..."
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/progress_bar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/colorLightMain">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/user_recommend_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.05"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:id="@+id/user_name_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="이름"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="5.0"
+                        android:shadowDy="5.0"
+                        android:shadowRadius="7.0"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"/>
+                    <TextView
+                        android:id="@+id/recommend_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="님의 추천 도서"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="5.0"
+                        android:shadowDy="5.0"
+                        android:shadowRadius="7.0"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:id="@+id/recommend_book_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_book_24"
+                    app:layout_constraintTop_toBottomOf="@+id/user_recommend_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/recommend_book_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:shadowRadius="5.0"
+                    android:shadowDy="3.0"
+                    android:shadowDx="3.0"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:text="책 제목"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintTop_toBottomOf="@id/recommend_book_image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/recommend_book_author_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:shadowRadius="5.0"
+                    android:shadowDy="3.0"
+                    android:shadowDx="3.0"
+                    android:shadowColor="@color/black"
+                    android:text="작가"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toBottomOf="@id/recommend_book_title_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+
+                <TextView
+                    android:id="@+id/recommend_sort_book_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:shadowRadius="5.0"
+                    android:shadowDy="3.0"
+                    android:shadowDx="3.0"
+                    android:shadowColor="@color/black"
+                    android:text="추천 분류"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/recommend_book_author_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/recommend_book_type_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:shadowRadius="5.0"
+                    android:shadowDy="5.0"
+                    android:shadowDx="5.0"
+                    android:shadowColor="@color/black"
+                    android:text="미정"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    app:layout_constraintTop_toBottomOf="@id/recommend_sort_book_type"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

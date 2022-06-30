@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#717171</color>
+    <color name="colorGreen">#188A1D</color>
+    <color name="colorLightGray">#AFAFAF</color>
+    <color name="colorMain">#00704A</color>
+    <color name="colorLightMain">#00D58C</color>
+    <color name="colorDeepMain">#7E00704A</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorBlue">#0049FF</color>
+    <color name="colorYellow">#FFEB3B</color>
+
+    <!--    KDC 색상 띠-->
+    <color name="num000">#2E2E94</color>
+    <color name="num100">#FDC90A</color>
+    <color name="num200">#ED1B24</color>
+    <color name="num300">#22211F</color>
+    <color name="num400">#0B9444</color>
+    <color name="num500">#818286</color>
+    <color name="num600">#ED018A</color>
+    <color name="num700">#00ADEF</color>
+    <color name="num800">#F1592A</color>
+    <color name="num900">#8EC63F</color>
+</resources>

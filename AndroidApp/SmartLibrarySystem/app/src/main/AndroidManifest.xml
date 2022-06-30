@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.goni99.smartlibrarysystem">
+    <!-- 인터넷 권한 허용 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 네트워크에 연결되었는 지 확인할 수 있게하는 권한 허용 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--
+ 디바스가 sleep 상태에 빠지지 않도록
+         ex) 폰 사용 안하면 배터리가 자연스럽게 절전모드로 해주는 것
+    -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartLibrarySystem"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".view.BookDetailActivity"></activity>
+        <activity android:name=".view.LibraryActivity" />
+        <activity android:name=".view.SignInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+    </application>
+
+</manifest>

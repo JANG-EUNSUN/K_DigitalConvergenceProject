@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SmartLibrarySystem</string>
+    <string name="id">아이디</string>
+    <string name="pwd">패스워드</string>
+    <string name="input_id">아이디를 입력해주세요</string>
+    <string name="input_pwd">패스워드를 입력해주세요</string>
+    <string name="sign_in">로그인</string>
+    <string name="sign_up">회원가입</string>
+
+    <string name="library_menu_rent_title">도서 대여</string>
+    <string name="library_menu_recommend_title">도서 추천</string>
+
+</resources>
